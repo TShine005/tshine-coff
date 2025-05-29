@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coffe.css">
+      <!-- link swiper css -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Coffee Website | CodingNepal</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="nav-bar section-content">
+            <a href="#" class="nav-logo">
+            <h2 class="logo-text">🥣🥂 Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+                         <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+         <section class="hero-section">
+            <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Best Coffee</h2>
+                <h3 class="subtitle">Make your day with our special Coffee</h3>
+                <p class="description">Welcome to our coffee paradise, where every bean
+                    tells a story and every cup sparks joy
+                </p>
+
+                <div class="buttons">
+                    <a href="#" class="button order-now">Order Now</a>
+                      <a href="#" class="button contant-us">Contant Us</a>
+                </div>
+            </div> 
+
+            <div class="hero-image-wrapper">
+               <img  class="hero-image-wrapper" src="download.png" alt=""> 
+            </div>
+            </div>
+         </section>
+
+         <!-- about section -->
+          <section class="about-section" id="about" >
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img class="about-image" src="data:image/jpeg;base64,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" alt="About">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">
+Coffee is just like life and the variety of it represents all aspects of mine. The smooth liquid never fails to give joy or satisfaction whenever it is being drank. It may be bitter like the
+ challenges we face, but it can be strong like what we should be during challenges.
+</p>
+                <div class="social-link-list">
+                    <a class="social-link" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a class="social-link" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social-link" href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- menu section -->
+           <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-items">
+                        <img class="menu-image" src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Vanilla-Chai-Latte-003-735x919.jpg
+                        " alt="Hot Beverages">
+                        <h3 class="menu-details">Hot Bevarages</h3>
+                        <p>Wide rannge of steaming hot coffe to
+                             make you fresh and light</p>
+                    </li>
+                     <li class="menu-items">
+                        <img class="menu-image" src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Vanilla-Chai-Latte-003-735x919.jpg
+                        " alt="Cold Beverages">
+                        <h3 class="menu-details">Cold Bevarages</h3>
+                        <p class="text">Creamy and frothy cold coffe to make you cool.</p>
+                    </li>
+                     <li class="menu-items">
+                        <img class="menu-image" src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Vanilla-Chai-Latte-003-735x919.jpg
+                        " alt="Hot Beverages">
+                        <h3 class="menu-details">Refreshing</h3>
+                        <p class="text">Friut and icy refreshing drink to make feel refresh.</p>
+                    </li>
+                     <li class="menu-items">
+                        <img class="menu-image" src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Vanilla-Chai-Latte-003-735x919.jpg
+                        " alt="Special Combos">
+                        <h3 class="menu-details">Special Combos</h3>
+                        <p class="text">Your favourite eating and drinking combations.</p>
+                    </li>
+                     <li class="menu-items">
+                        <img class="menu-image" src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Vanilla-Chai-Latte-003-735x919.jpg
+                        " alt="Hot Beverages">
+                        <h3 class="menu-details">Dessert</h3>
+                        <p class="text">Satiate your palate and take you on a culinary treat.</p>
+                    </li>
+                     <li class="menu-items">
+                        <img class="menu-image" src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Vanilla-Chai-Latte-003-735x919.jpg
+                        " alt="Burger & French">
+                        <h3 class="menu-details">Hot Bevarages</h3>
+                        <p class="text">Quick bites to satisfy your small size.</p>
+                    </li>
+                </ul>
+            </div>
+           </section>
+
+           <section class="testimonials-section" id="testimonials">
+             <h2 class="section-title">Testimonials</h2>
+             <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                              <img class="user-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jbQ3OY7CK_dYtUifWhOcFb13bEPRIcy2kQ&s alt="user>  
+                              <h3 class="name">TShine Olawuyi</h3>
+                              <i class="feedback">"Smile!!! Let everyone know that today you are a lot stronger than you were yesterday and you will be....."
+                              </i>
+                            </li>
+                              <li class="testimonial swiper-slide" >
+                              <img class="user-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pSrcbHZHu6q9cTENwbrynq00sC5hUJs0Ew&s alt="user>  
+                              <h3 class="name">TShine Olawuyi</h3>
+                              <i class="feedback">"Don't bother thinking about someone who never cares about you. Smile and show them that you're stronger than they thought you could ever be!"
+                              </i>
+                            </li>
+                              <li class="testimonial swiper-slide">
+                              <img class="user-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaJS0dnDYQ5NkVr30LWhCjQoMLtm6BC0TDA&s alt="user>  
+                              <h3 class="name">TShine Olawuyi</h3>
+                              <i class="feedback">"Find someone who knows that you're not perfect, but treats you as if you are!"
+                              </i>
+                            </li>
+                              <li class="testimonial swiper-slide">
+                              <img class="user-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjy-nMokF0yazcxuSpThQVg2UYckMjNNFaOw&s alt="user>  
+                              <h3 class="name">TShine Olawuyi</h3>
+                              <i class="feedback">"If your girlfriend clams that she never looks at your Facebook profile; Try changing your status ti SINGLE and wait 2-3 minutes!"
+                              </i>
+                            </li>
+                              <li class="testimonial swiper-slide">
+                              <img class="user-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rDiT9it7r-r__abYbK7u5UQ1av9CoxaChw&s alt="user>  
+                              <h3 class="name">TShine Olawuyi</h3>
+                              <i class="feedback">"In 50 years, people won't remember the clothes you wore, they'll remember how you made them feel, Think before they spake!"
+                              </i>
+                            </li>
+                            
+                        </ul>
+                         <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                     <div class="swiper-slide-button swiper-button-prev"
+                     ></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+
+                    </div>
+                </div>
+                </div>
+             </div>
+           </section>
+
+           <!-- gallery-section -->
+
+           <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img class="gallery-image" 
+                        src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=400ajEAAOSwcMZndXyl/s-l1600.webp" 
+                        alt="Gallery">
+                    </li>
+                    <li class="gallery-item">
+                        <img class="gallery-image" 
+                        src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=400ajEAAOSwcMZndXyl/s-l1600.webp" 
+                        alt="Gallery">
+                    </li>
+                    <li class="gallery-item">
+                        <img class="gallery-image" 
+                        src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=400ajEAAOSwcMZndXyl/s-l1600.webp" 
+                        alt="Gallery">
+                    </li>
+                    <li class="gallery-item">
+                        <img class="gallery-image" 
+                        src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=400wcMZndXyl/s-l1600.webp" 
+                        alt="Gallery">
+                    </li>
+                    <li class="gallery-item">
+                        <img class="gallery-image" 
+                        src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=400ajEAAOSwcMZndXyl/s-l1600.webp" 
+                        alt="Gallery">
+                    </li>
+                    <li class="gallery-item">
+                        <img class="gallery-image" 
+                        src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=400600.webp" 
+                        alt="Gallery">
+                    </li>
+                </ul>
+            </div>
+           </section>
+
+           <!-- contact section -->
+
+           <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 computer Avenue, Lagos, LA 318592</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+234) 810 860 7409</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 7:00 AM - 9:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sunday Closed: 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.tshinedevweb.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" 
+                    required>
+                    <textarea placeholder="Your messages" class="form-input">
+                    </textarea>
+                    <button class="submit-button"> Submit
+                    </button>
+                </form>
+            </div>
+           </section>
+
+           <!-- footer section -->
+
+           <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">
+                    @ 2025 Coffe Shop
+                </p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook">
+                    </i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram">
+                    </i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter">
+                    </i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">
+                        Privacy policy
+                    </a>
+                    <span class="separator">.</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+           </footer>
+
+    </main>
+
+
+    <!-- link swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+<!-- link custom script -->
+    <script src="hello.js"></script>
+</body>
+</html>
